@@ -16,16 +16,16 @@ export default function Perfiles() {
 <>
     <Box sx={{ width: '100%' }}>
 
-      <CustomTabPanel value={value} index={2}>
+      <CustomTabPanel value={value} index={0}>
         <Registrar></Registrar>
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
+      <CustomTabPanel value={value} index={2}>
       <Editar></Editar>
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={0}>
+      <CustomTabPanel value={value} index={1}>
        <Listar></Listar>
       </CustomTabPanel> 
-      <CustomTabPanel value={value} index={0}>
+      <CustomTabPanel value={value} index={3}>
        <Eliminar></Eliminar>
       </CustomTabPanel> 
     </Box>

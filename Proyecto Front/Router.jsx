@@ -20,8 +20,8 @@ const LogedInRoutes = () => {
         <Route path="/Perfiles" element={<Perfiles />} />
         <Route path='/Registrar' element={<Registrar />}/>
         <Route path='/Editar' element={<Editar />}/>
-        <Route path='Editar/Listar' element={<Listar />}/>
-        <Route path='Editar/Eliminar' element={<Eliminar />}/>
+        <Route path='/Listar' element={<Listar />}/>
+        <Route path='/Eliminar' element={<Eliminar />}/>
       </Routes>
     </>
   );

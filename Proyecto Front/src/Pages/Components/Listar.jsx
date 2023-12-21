@@ -16,7 +16,8 @@ import {
     ListItemText,
     Typography,
     styled,
-    CircularProgress
+    CircularProgress,
+    Alert
   } from "@mui/material";
   import {React} from "react";
   import {useState } from "react";
@@ -72,7 +73,7 @@ import { Key } from "@mui/icons-material";
                             color="primary"
                                 disabled={disableB}
                             >
-                            Ver Perros Aceptados
+                            Ver Perros Aceptado
                             </Button>
                                      
                         </Link>      

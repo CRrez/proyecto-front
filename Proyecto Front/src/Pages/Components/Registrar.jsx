@@ -17,13 +17,8 @@ import {useParams } from "react-router-dom";
 
 export default function Registro()  {
 const paramsUrl = useParams();
-  const { data } = useBuscarInfoQuery(formValues);
+  const { data } = useBuscarInfoQuery(paramsUrl);
 
-const [formValues, setFormValues] = useState({
-  Nombre: "",
-  Descripcion: "",
-  Imagen: "",
-});
 
 
 
@@ -33,7 +28,6 @@ const handlesubmit=(event)=>{
 }
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setFormValues({ ...formValues, [name]: value });
  };
   return (
     <Container>
@@ -65,7 +59,7 @@ const handlesubmit=(event)=>{
                         fullWidth
                         name="Nombre"
                         onChange={handleChange}
-                        value={formValues.Nombre}
+                        
                       />
             </Grid>
             <Grid item md={4}>
@@ -77,24 +71,11 @@ const handlesubmit=(event)=>{
                         fullWidth
                         name="Descripcion"
                         onChange={handleChange}
-                        value={formValues.Descripcion}
+                        
 
                       />
                   </Grid>
-                  <Grid item md={4}>
 
-                    <TextField
-                      margin="dense"
-                      label="Imagen"
-                      variant="outlined"
-                      fullWidth
-                      name="Imagen"
-                      onChange={handleChange}
-                      value={formValues.Imagen}
-
-                      
-                    />
-                  </Grid>
           </Grid>
           <Button
             id="terminar_registro"
@@ -103,7 +84,7 @@ const handlesubmit=(event)=>{
             variant="contained"
             type="submit"
           >
-            Terminar Registro
+          Registrar Articulo
           </Button>
         </Grid>
 

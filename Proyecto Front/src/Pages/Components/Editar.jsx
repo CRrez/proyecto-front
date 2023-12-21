@@ -21,7 +21,7 @@ import {
   import {React} from "react";
   import {useState } from "react";
 
-  import {useBuscarInfoQuery} from "../Queries/AceptadoQuery";
+  import {useBuscarInfoQuery} from "../Queries/EditarQuery";
   import { Link,useParams,useLocation } from "react-router-dom";
   import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Key } from "@mui/icons-material";
@@ -37,13 +37,10 @@ import { Key } from "@mui/icons-material";
     const datosRecibidos = location.state;
     console.log(datosRecibidos);
     const paramsUrl = useParams();
-    const [disableB,isDisableB] =useState(false);
-    const [disableB2,isDisableB2] =useState(false);
-    const [disableB3,isDisableB3] =useState(false);
-    const [expanded, setExpanded] = useState(false);
 
 
-    const { data: perro, isError: hayError,isLoading:cargaPerro,refetch } = useBuscarInfoQuery({valor:paramsUrl.pid,isDisableB,isDisableB2,isDisableB3});
+
+    const { data: perro, isError: hayError,isLoading:cargaPerro,refetch } = useBuscarInfoQuery({valor:paramsUrl.pid});
 
    
 

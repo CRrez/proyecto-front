@@ -5,7 +5,7 @@ import axios from "axios";
 export function useBuscarInfoQuery(params) {
     let habilitado = params.valor != "";
   return useQuery(
-    ["buscarInfoQuery",params], buscarInfoQuery, {
+    ["buscarInfoQuery",params], buscarInfoRQuery, {
     retry: 0,
     refetchOnWindowFocus: false,
     refetchOnMount: false,
@@ -15,10 +15,10 @@ export function useBuscarInfoQuery(params) {
   
 };
 
-export const buscarInfoQuery = async (params) => { 
+export const buscarInfoRQuery = async (params) => { 
     const [queryName, paramsFilter] = params.queryKey;
     const [queryName2, paramsFilter2] = params.queryKey;
-    let url= "http://127.0.0.1:8000/api/perro/PerRandom";
+    let url= "http://127.0.0.1:8000/api/articulo/EliminarArticulo";
 
     const { data } = await axios.get(url);
 

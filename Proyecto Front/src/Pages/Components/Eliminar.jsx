@@ -21,7 +21,7 @@ import {
   import {React} from "react";
   import {useState } from "react";
 
-  import {useBuscarInfoQuery} from "../Queries/AceptadoQuery";
+  import {useBuscarInfoQuery} from "../Queries/EliminarQuery";
   import { Link,useParams,useLocation } from "react-router-dom";
   import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Key } from "@mui/icons-material";

@@ -20,7 +20,7 @@ import {
   } from "@mui/material";
   import {React} from "react";
   import {useState } from "react";
-  import {useBuscarInfoQuery} from "../Queries/CandidatoQuery"
+  import {useBuscarInfoQuery} from "../Queries/ListarQuery"
   import { Link,useParams,useLocation } from "react-router-dom";
   import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Key } from "@mui/icons-material";

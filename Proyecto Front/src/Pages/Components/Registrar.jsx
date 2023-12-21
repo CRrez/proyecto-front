@@ -9,7 +9,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { useBuscarInfoQuery } from "../Queries/RegistroQuery";
+import { useBuscarInfoQuery } from "../Queries/RegistrarQuery";
 import {useParams } from "react-router-dom";
 
 

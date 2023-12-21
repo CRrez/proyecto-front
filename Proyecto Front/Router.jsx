@@ -22,8 +22,6 @@ const LogedInRoutes = () => {
         <Route path='/Editar' element={<Editar />}/>
         <Route path='Editar/Listar' element={<Listar />}/>
         <Route path='Editar/Eliminar' element={<Eliminar />}/>
-        <Route path="/Perro" element={<Perro/>} />
-
       </Routes>
     </>
   );

@@ -2,7 +2,9 @@ import React from "react"
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Registrar from "./Registrar";
-
+import Editar from "./Editar";
+import Listar from "./Listar";
+import Eliminar from "./Eliminar";
 
 export default function Perfiles() {
   const [value, setValue] = React.useState(0);
@@ -24,7 +26,7 @@ export default function Perfiles() {
        <Listar></Listar>
       </CustomTabPanel> 
       <CustomTabPanel value={value} index={0}>
-       <Borrar></Borrar>
+       <Eliminar></Eliminar>
       </CustomTabPanel> 
     </Box>
 

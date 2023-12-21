@@ -3,14 +3,13 @@ import axios from "axios";
 
 
 export function useBuscarInfoQuery(params) {
-    let habilitado = params.valor != "";
   return useQuery(
-    ["buscarInfoQuery",params], buscarInfoQuery, {
+  {
     retry: 0,
     refetchOnWindowFocus: false,
     refetchOnMount: false,
     keepPreviousData: false,
-    enabled: habilitado,
+
   });
   
 };
@@ -18,14 +17,11 @@ export function useBuscarInfoQuery(params) {
 export const buscarInfoQuery = async (params) => { 
     const [queryName, paramsFilter] = params.queryKey;
     const [queryName2, paramsFilter2] = params.queryKey;
-    let url= "http://127.0.0.1:8000/api/perro/listaPerro";
+    let url= "http://127.0.0.1:8000/api/articulo/registraArticulo";
 
-    const { data } = await axios.get(url);
+    const { data } = await axios.post(url);
 
    
 
-    params.queryKey[1].isDisableB(false);
-    params.queryKey[1].isDisableB2(false);
-    params.queryKey[1].isDisableB3(false);
     return data;
     };

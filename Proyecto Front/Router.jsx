@@ -18,10 +18,10 @@ const LogedInRoutes = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/Perfiles" element={<Perfiles />} />
-        <Route path='/Registrar' element={<Registrar />}/>
-        <Route path='/Editar' element={<Editar />}/>
-        <Route path='/Listar' element={<Listar />}/>
-        <Route path='/Eliminar' element={<Eliminar />}/>
+        <Route path='Perfiles/Registrar' element={<Registrar />}/>
+        <Route path='Perfiles/Editar' element={<Editar />}/>
+        <Route path='Perfiles/Listar' element={<Listar />}/>
+        <Route path='Perfiles/Eliminar' element={<Eliminar />}/>
       </Routes>
     </>
   );

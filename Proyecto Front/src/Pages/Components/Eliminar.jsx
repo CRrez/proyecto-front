@@ -53,7 +53,7 @@ import { Key } from "@mui/icons-material";
 
       return (
           <>
-            {hayError && <Alert severity="error">ese perro no esta</Alert>}
+            {hayError && <Alert severity="error">No hay articulos para eliminar</Alert>}
 
 
             <Grid container spacing={2}>

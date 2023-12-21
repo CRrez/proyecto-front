@@ -27,7 +27,7 @@ import {
   import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Key } from "@mui/icons-material";
 
-  export default function PerroA()
+  export default function Editar()
   {
   
 
@@ -49,7 +49,7 @@ import { Key } from "@mui/icons-material";
 
       return (
           <>
-            {hayError && <Alert severity="error">ese perro no esta</Alert>}
+            {hayError && <Alert severity="error">No hay articulos para editar</Alert>}
 
 
             <Grid container spacing={2}>
@@ -81,7 +81,7 @@ import { Key } from "@mui/icons-material";
               </Collapse>
                     </Card>
                   </List>  
-              )};    
+              )}    
               </Grid> 
 
 

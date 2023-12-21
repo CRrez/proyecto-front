@@ -3,14 +3,13 @@ import axios from "axios";
 
 
 export function useBuscarInfoQuery(params) {
-    let habilitado = params.valor != "";
   return useQuery(
     ["buscarInfoQuery",params], buscarInfoQuery, {
     retry: 0,
     refetchOnWindowFocus: false,
     refetchOnMount: false,
     keepPreviousData: false,
-    enabled: habilitado,
+
   });
   
 };
@@ -24,8 +23,5 @@ export const buscarInfoQuery = async (params) => {
 
    
 
-    params.queryKey[1].isDisableB(false);
-    params.queryKey[1].isDisableB2(false);
-    params.queryKey[1].isDisableB3(false);
     return data;
     };
